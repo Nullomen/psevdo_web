@@ -11,15 +11,17 @@ a {
   text-align: center;
   padding: 80px;
 }
+
 .footer {
-  position: fixed; /* Фиксированное положение */
-  left: 0; bottom: 0; /* Левый нижний угол */
-  padding: 10px; /* Поля вокруг текста */
-  background: #00B7FF; /* Цвет фона */
-  color: #fff; /* Цвет текста */
-  width: 100%; /* Ширина слоя */
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  background: #00B7FF;
+  color: #fff;
+  width: 100%; 
   text-align: center;
 }
+
 .textLow{
   position: fixed;
   left: 0; bottom: 500px;
@@ -27,11 +29,12 @@ a {
 }
 
 .stylePhoto{
-  position: relative; /* Фиксированное положение */
+  position: relative; 
   top:300px;
   vertical-align:bottom;
   text-align: center;
 }
+
 button {
   border-radius: 4px;
   transition: border-radius 0.2s ease-in;
@@ -40,6 +43,7 @@ button {
 button:hover {
   border-radius: 16px;
 }
+
 .bgteamdetail{
   background-image: url("/images/bg.png");
   height: 472px;
