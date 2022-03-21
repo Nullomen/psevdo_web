@@ -41,40 +41,24 @@
           <th scope="col">No.</th>
           <th scope="col">Name</th>
           <th scope="col">Position</th>
-          <th scope="col">DateOfBirth</th>
+          <th scope="col">Age</th>
           <th scope="col">College</th>
           <th scope="col">Experience</th>
           <th scope="col">Salary</th>
         </tr>
       </thead>
       <tbody>
+        <% staff.forEach(function(player) { %>
         <tr>
-          <td>0</td>
-          <td>Semen Semenist</td>
-          <td>SG</td>
-          <td>0</td>
-          <td>TEXAS</td>
-          <td>3</td>
-          <td>$566.556.55</td>
+          <td><%= player.id %></td>
+          <td><%= player.name %></td>
+          <td><%= player.position %></td>
+          <td><%= player.age %></td>
+          <td><%= player.college %></td>
+          <td><%= player.experience %></td>
+          <td>$<%= player.salary %></td>
         </tr>
-        <tr>
-          <td>0</td>
-          <td>Semen Semenist</td>
-          <td>SG</td>
-          <td>0</td>
-          <td>TEXAS</td>
-          <td>3</td>
-          <td>$566.556.55</td>
-        </tr>
-        <tr>
-          <td>0</td>
-          <td>Semen Semenist</td>
-          <td>SG</td>
-          <td>0</td>
-          <td>TEXAS</td>
-          <td>3</td>
-          <td>$566.556.55</td>
-        </tr>
+        <% }); %>
       </tbody>
     </table>
   </div>
@@ -92,33 +76,17 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>0</td>
-        <td>Semen Semenist</td>
-        <td>SG</td>
-        <td>0</td>
-        <td>TEXAS</td>
-        <td>3</td>
-        <td>$566.556.55</td>
-      </tr>
-      <tr>
-        <td>0</td>
-        <td>Semen Semenist</td>
-        <td>SG</td>
-        <td>0</td>
-        <td>TEXAS</td>
-        <td>3</td>
-        <td>$566.556.55</td>
-      </tr>
-      <tr>
-        <td>0</td>
-        <td>Semen Semenist</td>
-        <td>SG</td>
-        <td>0</td>
-        <td>TEXAS</td>
-        <td>3</td>
-        <td>$566.556.55</td>
-      </tr>
+        <% staff.forEach(function(player) { %>
+        <tr>
+          <td><%= player.id %></td>
+          <td><%= player.name %></td>
+          <td><%= player.position %></td>
+          <td><%= player.age %></td>
+          <td><%= player.college %></td>
+          <td><%= player.experience %></td>
+          <td>$<%= player.salary %></td>
+        </tr>
+        <% }); %>
       </tbody>
     </table>
   </div>
