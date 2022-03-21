@@ -24,6 +24,17 @@ Copy environment variables for project:
 $ cp .env.example .env
 ```
 
+
+#### Start this commands when DB up!
+Run migration:
+```bash
+$ knex migrate:up
+```
+Run seed:
+```bash
+$ knex seed:run
+```
+
 # Run project
 
 Run express server:
@@ -32,10 +43,10 @@ Run express server:
 $ npm run start
 ```
 
-Run docker image db without deamon:
+Run docker image db with deamon:
 
 ```bash
-$ docker-compose up
+$ docker-compose up -d
 ```
 Down docker container: 
 
@@ -44,8 +55,8 @@ $ docker-compose down
 ```
 
 OPTIONAL
-Run docker image db with deamon:
+Run docker image db without deamon:
 
 ```bash
-$ docker-compose up -d
+$ docker-compose up
 ```
